@@ -150,9 +150,9 @@ end
 Module.UpdateChatWindowAlpha = function(self, frame)
 	local alpha
 	if self:GetChatWindowCurrentEditBox(frame):IsShown() then
-		alpha = 0.25
+		alpha = 0.5
 	else
-		alpha = 0
+		alpha = 0.8
 	end
 	for index, value in pairs(CHAT_FRAME_TEXTURES) do
 		if (not value:find("Tab")) then
